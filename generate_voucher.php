@@ -93,10 +93,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <style>
         /* Container for overall page */
         .container {
-            max-width: 100%;
-            padding: 15px;
+            width: 100%;
+            max-width: 960px; /* Maximum container width for large screens */
         }
-
         /* For Card styling */
         .card {
             width: 100%;
@@ -127,8 +126,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         /* Customizing table for laptop screens */
         @media (min-width: 768px) and (max-width: 1024px) {
             .table-wrapper {
-                width: 90%; /* Set to 90% of the screen for laptops */
-                margin: auto;
+                width: 10%; /* Set to 90% of the screen for laptops */
+            
             }
         }
 
@@ -153,13 +152,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 width: 100%; /* Ensure table takes full width on mobile */
                 margin-top: 10px;
             }
-            #voucherTable th, #voucherTable td {
-    padding: 8px; /* Reduce padding inside table cells */
-}
 
-#voucherTable {
-    font-size: 0.9rem; /* Make text slightly smaller */
-}
 
         }
     </style>
